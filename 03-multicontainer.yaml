@@ -1,4 +1,4 @@
-ApiVersipon: v1
+ApiVersion: v1
 kind: Pod
 metadata:
   name: multi-container
