@@ -1,0 +1,10 @@
+ApiVersipon: v1
+kind: Pod
+metadata:
+  name: multi-container
+  spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+    - name: almalinux
+      image: almalinux:latest
