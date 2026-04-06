@@ -6,7 +6,7 @@ spec:
   selector:
     project: roboshop
     environment: dev
-    kubernetes: true
+    kubernetes: "true"
   ports:
     - protocol: TCP
       port: 80

@@ -5,7 +5,7 @@ metadata:
   labels:
     project: roboshop
     environment: dev
-    kubernetes: true
+    kubernetes: "true"
 spec:
   containers:
     - name: nginx
