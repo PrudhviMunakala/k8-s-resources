@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: nginx-replicaset
+  name: replicaset
   labels:
     project: roboshop
     environment: dev
@@ -12,7 +12,6 @@ spec:
       app: nginx # must match template labels below
       project: roboshop
       environment: dev
----
 # Pod Definition
 template:
   metadata:
