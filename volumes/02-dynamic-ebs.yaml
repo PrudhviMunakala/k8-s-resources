@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ebs-static
 spec:
-  storageClassName: "roboshop-ebs" # Empty string must be explicitly set otherwise default StorageClass will be set
+  storageClassName: roboshop-ebs # Empty string must be explicitly set otherwise default StorageClass will be set
   volumeName: ebs-static # This is  the PV name
   accessModes:
     - ReadWriteOnce
