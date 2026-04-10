@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ebs-static
+  name: ebs-dynamic
 spec:
   storageClassName: roboshop-ebs # Empty string must be explicitly set otherwise default StorageClass will be set
-  volumeName: ebs-static # This is  the PV name
+  volumeName: ebs-dynamic # This is  the PV name
   accessModes:
     - ReadWriteOnce
   resources:
@@ -27,4 +27,4 @@ spec:
   volumes:
     - name: html-data
       persistentVolumeClaim:
-        claimName: ebs-static
+        claimName: ebs-dynamic
